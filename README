@@ -1,1 +1,21 @@
-Classe PHP para utilizacao de gateway de pagamentos Locaweb com operadora Cielo
+Esta é uma classe PHP para auxílio em integração de lojas virtuais que utilizam gateway Locaweb e Cielo como módulo de 
+pagamentos
+
+OBS: É necessário PHP5 ou superior para que esse script funcione corretamente
+
+1. Existe um construtor que instancia os principais dados para o funcionamento da classe.
+2. A opção "allow_url_fopen" deve estar habilitada para que a classe possa fazer requisições à Cielo.
+   Use ini_set('allow_url_fopen', 1); para habilita-la caso seu servidor nao à esteja por padrão
+3. Juntamente à classe exite um arquivo index.php, onde, de forma simples, é demonstrado o uso da classe
+4. Um estudo e leitura da classe é recomendado
+5. Estudo do manual de integração fornecido pela Locaweb é indispensável!
+
+Este script pode ser utilizado e testado, não há garantias do funcionamento do mesmo até chegarmos em uma
+versão final.
+
+Sugestões, testes e críticas são sempre bem vindos!
+
+Dúvidas e bugs:
+
+markus.prologic@gmail.com
+http://www.verbose.com.br
