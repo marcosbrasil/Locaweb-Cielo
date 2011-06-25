@@ -1,21 +1,25 @@
-Esta é uma classe PHP para auxílio em integração de lojas virtuais que utilizam gateway Locaweb e Cielo como módulo de 
-pagamentos
+Esta &eacute; uma classe PHP para aux&iacute;lio em integra&ccedil;&atilde;o de lojas virtuais que utilizam 
+gateway Locaweb e Cielo como m&oacute;dulo de pagamentos 
 
-OBS: É necessário PHP5 ou superior para que esse script funcione corretamente
+OBS: &Eacute; necess&aacute;rio PHP5 ou superior para que esse script funcione corretamente 
 
-1. Existe um construtor que instancia os principais dados para o funcionamento da classe.
-2. A opção "allow_url_fopen" deve estar habilitada para que a classe possa fazer requisições à Cielo.
-   Use ini_set('allow_url_fopen', 1); para habilita-la caso seu servidor nao à esteja por padrão
-3. Juntamente à classe exite um arquivo index.php, onde, de forma simples, é demonstrado o uso da classe
-4. Um estudo e leitura da classe é recomendado
-5. Estudo do manual de integração fornecido pela Locaweb é indispensável!
+1. Existe um construtor que instancia os principais dados para o funcionamento da classe. 
 
-Este script pode ser utilizado e testado, não há garantias do funcionamento do mesmo até chegarmos em uma
-versão final.
+2. A op&ccedil;&atilde;o &quot;allow_url_fopen&quot; deve estar habilitada para que a classe possa fazer         
+   requisi&ccedil;&otilde;es &agrave; Cielo. Use ini_set('allow_url_fopen', 1); para habilita-la caso 
+   seu servidor nao &agrave; esteja por padr&atilde;o 
 
-Sugestões, testes e críticas são sempre bem vindos!
+3. Juntamente &agrave; classe exite um arquivo index.php, onde, de forma simples, &eacute; demonstrado o uso da classe 
 
-Dúvidas e bugs:
+4. Um estudo e leitura  da classe &eacute; recomendado 
 
-markus.prologic@gmail.com
+5. Estudo do manual de integra&ccedil;&atilde;o fornecido pela Locaweb &eacute; indispens&aacute;vel! 
+
+Este script pode ser utilizado e testado, n&atilde;o h&aacute; garantias do funcionamento do 
+mesmo at&eacute; chegarmos em uma vers&atilde;o final. 
+
+Sugest&otilde;es, testes e cr&iacute;ticas s&atilde;o sempre bem vindos! 
+
+D&uacute;vidas e bugs: 
+markus.prologic@gmail.com 
 http://www.verbose.com.br
