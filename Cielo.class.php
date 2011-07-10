@@ -1,9 +1,9 @@
 <?php
 /**
 * Classe para utilizar gateway locaweb com pagamentos CIELO
-* @AUTOR: Marcos Brasil / markus.prologic@gmail.com
-* @DATE: 10/06/2011
-* @VERSION: 0.1alpha
+* @AUTHOR Marcos Brasil / markus.prologic@gmail.com
+* @DATE 10/07/2011
+* @VERSION 0.1.1
 */
 class Cielo {
 	
@@ -208,7 +208,7 @@ class Cielo {
 		}
 
 		// Se nao ocorreu erro exibe parametros
-		if (isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
+		if (!isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
 			$_SESSION['tid'] = $retorno_tid; // - grava o tid em um session para posterior uso
 
 			$return['status'] = true;
@@ -324,8 +324,8 @@ class Cielo {
 			$retorno_url_autenticacao = $nodeURLAutenticacao->nodeValue;
 		}
 
-		// Se n�o ocorreu erro exibe par�metros
-		if (isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
+		// Se nao ocorreu erro exibe parametros
+		if (!isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
 			
 			$return['status'] = true;
 			$return['retorno_tid'] = $retorno_tid;
@@ -451,8 +451,8 @@ class Cielo {
 			$retorno_url_autenticacao = $nodeURLAutenticacao->nodeValue;
 		}
 
-		// Se n�o ocorreu erro exibe par�metros
-		if (isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
+		// Se nao ocorreu erro exibe parametros
+		if (!isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
 			$return['return'] = true;
 			$return['retorno_tid'] = $retorno_tid;
 			$return['retorno_pan'] = $retorno_pan;
@@ -628,7 +628,7 @@ class Cielo {
 		}
 
 		// Se nao ocorreu erro exibe parametros
-		if (isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
+		if (!isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
 			// - transacao
 			$return['status'] = true;
 			$return['retorno_tid'] = $retorno_tid;
@@ -775,8 +775,8 @@ class Cielo {
 		}
 
 		// Se não ocorreu erro exibe parâmetros
-		if ($retorno_codigo_erro == '') {
-			$return['status'] = true;
+		if (!isset($retorno_codigo_erro) || $retorno_codigo_erro == '') {
+		    $return['status'] = true;
 			
 		    // - Transacao
 		    $return['retorno_tid'] = $retorno_tid;
