@@ -3,7 +3,7 @@
 * Arquivo de demonstracao
 * @AUTOR: Marcos Brasil / markus.prologic@gmail.com
 * @DATE: 24/06/2011
-* @VERSION: 0.1alpha
+* @VERSION: 0.1.1
 */
 	session_start();
 	ini_set('allow_url_fopen', 1); // - Ativa a diretiva 'allow_url_fopen' do php.ini
@@ -92,9 +92,9 @@
 			
 			// - Caso nao seja fornecido um TID como parametro, sera usado $_SESSION['tid'] caso esse nao esteja setado
 			//   a classe retornara um warning
-			$return_cancela = $Cielo->autorizaTransacao($_GET['tid']);
+			$return_autoriza = $Cielo->autorizaTransacao($_GET['tid']);
 			
-			echo $return_consulta['retorno_status']; // - confira os codigos de retorno para trata-los adequadamente
+			echo $return_autoriza['retorno_status']; // - confira os codigos de retorno para trata-los adequadamente
 		
 		break;
 		
@@ -107,9 +107,9 @@
 			
 			// - Caso nao seja fornecido um TID como parametro, sera usado $_SESSION['tid'] caso esse nao esteja setado
 			//   a classe retornara um warning
-			$return_cancela = $Cielo->autorizaTransacao($_GET['tid']);
+			$return_captura = $Cielo->capturaTransacao($_GET['tid']);
 			
-			echo $return_consulta['retorno_status']; // - confira os codigos de retorno para trata-los adequadamente
+			echo $return_captura['retorno_status']; // - confira os codigos de retorno para trata-los adequadamente
 		
 		break;
 	}
