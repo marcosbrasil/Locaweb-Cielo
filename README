@@ -1,3 +1,4 @@
+<h2>Locaweb / Cielo</h2>
 Esta é uma classe PHP para auxílio em integração de lojas virtuais que utilizam gateway Locaweb e Cielo como módulo de 
 pagamentos
 
@@ -18,4 +19,4 @@ Sugestões, testes e críticas são sempre bem vindos!
 Dúvidas e bugs:
 
 markus.prologic@gmail.com
-http://www.verbose.com.
+http://www.verbose.com
